@@ -1,3 +1,9 @@
+python-azure-mgmt-resource (0.31.0-1) pexip; urgency=low
+
+  * New upstream release
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 28 Feb 2017 11:45:55 +0000
+
 python-azure-mgmt-resource (0.30.0~rc1-2) pexip; urgency=low
 
   * No-change rebuild
