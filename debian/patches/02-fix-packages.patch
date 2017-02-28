@@ -1,0 +1,44 @@
+diff --git a/setup.py b/setup.py
+index cdbfccd..2b560e7 100644
+--- a/setup.py
++++ b/setup.py
+@@ -6,7 +6,7 @@
+ # license information.
+ #--------------------------------------------------------------------------
+ 
+-from setuptools import find_packages, setup
++from setuptools import setup
+ from io import open
+ import re
+ 
+@@ -59,7 +59,29 @@ setup(
+         'License :: OSI Approved :: MIT License',
+     ],
+     zip_safe=False,
+-    packages=find_packages(),
++    packages=[
++        'azure',
++        'azure.mgmt',
++        'azure.mgmt.resource',
++        'azure.mgmt.resource.features',
++        'azure.mgmt.resource.features.models',
++        'azure.mgmt.resource.features.operations',
++        'azure.mgmt.resource.links',
++        'azure.mgmt.resource.links.models',
++        'azure.mgmt.resource.links.operations',
++        'azure.mgmt.resource.locks',
++        'azure.mgmt.resource.locks.models',
++        'azure.mgmt.resource.locks.operations',
++        'azure.mgmt.resource.policy',
++        'azure.mgmt.resource.policy.models',
++        'azure.mgmt.resource.policy.operations',
++        'azure.mgmt.resource.resources',
++        'azure.mgmt.resource.resources.models',
++        'azure.mgmt.resource.resources.operations',
++        'azure.mgmt.resource.subscriptions',
++        'azure.mgmt.resource.subscriptions.models',
++        'azure.mgmt.resource.subscriptions.operations',
++    ],
+     install_requires=[
+         'azure-mgmt-nspkg',
+         'azure-common>=1.1.4',
