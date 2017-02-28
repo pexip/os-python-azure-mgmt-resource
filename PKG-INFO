@@ -1,11 +1,11 @@
 Metadata-Version: 1.1
 Name: azure-mgmt-resource
-Version: 0.30.0rc1
+Version: 0.31.0
 Summary: Microsoft Azure Resource Management Client Library for Python
 Home-page: https://github.com/Azure/azure-sdk-for-python
 Author: Microsoft Corporation
 Author-email: ptvshelp@microsoft.com
-License: Apache License 2.0
+License: MIT License
 Description: Microsoft Azure SDK for Python
         ==============================
         
@@ -56,8 +56,46 @@ Description: Microsoft Azure SDK for Python
         `Issues <https://github.com/Azure/azure-sdk-for-python/issues>`__
         section of the project.
         
+        
+        .. :changelog:
+        
+        Release History
+        ===============
+        
+        0.31.0 (2016-11-10)
+        +++++++++++++++++++
+        
+        **Breaking change**
+        
+        - Resource.Links 'create_or_update' method has simpler parameters
+        
+        0.30.2 (2016-10-20)
+        +++++++++++++++++++
+        
+        **Features**
+        
+        - Add Resource.Links client
+        
+        
+        0.30.1 (2016-10-17)
+        +++++++++++++++++++
+        
+        **Bugfixes**
+        
+        - Location is now correctly declared optional and not required.
+        
+        0.30.0 (2016-10-04)
+        +++++++++++++++++++
+        
+        * Preview release. Based on API version 2016-09-01.
+        
+        0.20.0 (2015-08-31)
+        +++++++++++++++++++
+        
+        * Initial preview release. Based on API version 2014-04-01-preview
+        
 Platform: UNKNOWN
-Classifier: Development Status :: 4 - Beta
+Classifier: Development Status :: 5 - Production/Stable
 Classifier: Programming Language :: Python
 Classifier: Programming Language :: Python :: 2
 Classifier: Programming Language :: Python :: 2.7
@@ -65,4 +103,4 @@ Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.3
 Classifier: Programming Language :: Python :: 3.4
 Classifier: Programming Language :: Python :: 3.5
-Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
