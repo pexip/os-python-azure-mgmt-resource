@@ -1,1 +1,11 @@
-﻿__import__('pkg_resources').declare_namespace(__name__)
+﻿from .features import FeatureClient
+from .locks import ManagementLockClient
+from .policy import PolicyClient
+from .resources import ResourceManagementClient
+from .subscriptions import SubscriptionClient
+from .links import ManagementLinkClient
+
+from .version import VERSION
+
+__version__ = VERSION
+
